@@ -10,7 +10,7 @@ const useStyle = makeStyles((theme) => ({
         alignItems: 'center',
     },
     heading: {
-        color: 'rgba(0,183,255, 1)',
+        color: 'rgba(51,0,51,1)',
     },
     image: {
         marginLeft: '15px',

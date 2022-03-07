@@ -2,7 +2,6 @@ import express from 'express';
 import cors from 'cors';
 import bodyParser from 'body-parser';
 import dotenv from 'dotenv';
-// import mongoose from 'mongoose';
 import Connection from './components/db.js';
 
 //components import
@@ -16,6 +15,10 @@ app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }))
 app.use(cors())
 
 app.use('/posts', postRoutes);
+
+app.get('/', (req, res) => {
+    res.send('Hello to Memories API');
+})
 
 Connection();
 
